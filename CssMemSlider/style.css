@@ -109,15 +109,10 @@ label:hover {
     border-radius: 50%;
 
 }
-.round:hover {
-    background: #fff;
-    transition: 0.2s;
-}
 
-/* .round:active {
-    background: #25282a;
-    border: #fff 1px solid;
-} */
+.round:hover {
+    background: rgba(255,255,255, 0.5);
+}
 
 #active label {
     width: 35px;
@@ -129,13 +124,7 @@ label:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
-
-/* .line {
-    display: flex;
-
-} */
 
 #active{
     margin: 0 auto;
@@ -293,9 +282,9 @@ label:hover {
     border-radius: 50%;
 
 }
+
 .round:hover {
-    background: #fff;
-    transition: 0.2s;
+    background: rgba(255,255,255, 0.5);
 }
 
 
@@ -327,7 +316,7 @@ label:hover {
     background:#fff ;
     height: 35px;
     width: 35px;
-    transition: 0.2s;
+    /* transition: 0.2s; */
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -399,24 +388,12 @@ label:hover {
         
     }
 
-    /* .all  {
-        max-width: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        overflow-x: hidden;
-        height: 700px;
-         
-  } */
-
   #slider{
     margin: 0 auto;
     text-align: center;
     margin-top: 40px;
     display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-   
+    flex-direction: column; 
 }
 
 #active{
@@ -434,9 +411,9 @@ label:hover {
     border-radius: 50%;
 
 }
+
 .round:hover {
-    background: #fff;
-    transition: 0.2s;
+    background: rgba(255,255,255, 0.5);
 }
 
 
@@ -468,7 +445,7 @@ label:hover {
     /* background:#fff ; */
     height: 35px;
     width: 35px;
-    transition: 0.2s;
+    /* transition: 0.2s; */
     display: flex;
     align-items: center;
     justify-content: center; 
