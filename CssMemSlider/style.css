@@ -30,11 +30,10 @@ html {
     margin: 0 auto;
     background-color:#25282a;
     display: flex;
-    overflow-x: hidden;
-    
+    overflow-x: hidden; 
+    overflow-y: hidden; 
     
 }
-
 
 #slider{
     margin: 0 auto;
@@ -43,8 +42,6 @@ html {
     flex-direction: column;
     height: 100vh;
     margin-top: 40px;
-   
-   
 }
 
 #slider article{
@@ -68,7 +65,7 @@ article img {
    
 }
 
-Label:hover {
+label:hover {
     cursor: pointer;
     width: 25px;
     height: 25px;
@@ -117,23 +114,28 @@ Label:hover {
     transition: 0.2s;
 }
 
-.round:active {
+/* .round:active {
     background: #25282a;
     border: #fff 1px solid;
-}
+} */
 
 #active label {
     width: 35px;
-    display: inline-block;
     height: 35px;
+    display: inline-block;
     border-radius: 50%;
-    background: #84b6fe;
+    /* background: #84b6fe; */
     background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     
 }
+
+/* .line {
+    display: flex;
+
+} */
 
 #active{
     margin: 0 auto;
@@ -145,11 +147,10 @@ Label:hover {
     align-items: center;
 }
 #active label:hover {
-    /* background: #fff; */
     background-color: transparent;
     transition: 0.2s;
     height: 35px;
-    width: 305x;
+    width: 35px;
 }
 
 #switch1:checked ~ #active label:nth-child(1),
@@ -157,54 +158,42 @@ Label:hover {
 #switch3:checked ~ #active label:nth-child(3),
 #switch4:checked ~ #active label:nth-child(4),
 #switch5:checked ~ #active label:nth-child(5) {
-    background: #25282a;
+
     background:#fff ;
-    /* background: rgba(0, 0, 255, 0.2) !important; */
-    fill-opacity: 0.5;
-    border: transparent;
-    /* height: 30px;
-    width: 30px; */
-    /* border: #fff 3px solid; */
+    height: 35px;
+    width: 35px;
     padding: 5px;
-    /* width: 15px;
-    height: 15px; */
     transition: 0.2s;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 #switch1:checked ~ #active label:nth-child(1):hover{
-    background: #25282a;
-    /* border: #fff 1px solid; */
+    background: #fff;
     border: 0px;
     transition: 0.2s;
 }
 
 #switch2:checked ~ #active label:nth-child(2):hover{
-    background: #25282a;
-    border: #fff 1px solid;
+    background: #fff;
     border: 0px;
     transition: 0.2s;
 }
 
 #switch3:checked ~ #active label:nth-child(3):hover{
-    background: #25282a;
-    border: #fff 1px solid;
+    background: #fff;
     border: 0px;
     transition: 0.2s;
 }
 
 #switch4:checked ~ #active label:nth-child(4):hover{
-    background: #25282a;
-    border: #fff 1px solid;
+    background: #fff;
     border: 0px;
     transition: 0.2s;
 }
 #switch5:checked ~ #active label:nth-child(5):hover{
-    background: #25282a;
-    border: #fff 1px solid;
+    background: #fff;
     border: 0px;
     transition: 0.2s;
 }
@@ -217,34 +206,28 @@ Label:hover {
     margin-left:0;
 }
 
-
 .overflow-text {
     height: 22px;
     overflow: hidden;
-    
     width: 20%;
 }
+
 .text {
     height: 22px;
     display: flex;
     text-align: left;
     width: 2500%;
     margin-top: 15px;
-  
-   
 }
 
 .bottom-text {
-
     font-family: Roboto;
     color: #fff;
     font-size: 22px;
     width: 100%;
     display: flex;
     margin-left: 3em;
-   
 }
-
 
 #switch1:checked ~ #below-text .text{
     margin-left: 0%;
@@ -273,23 +256,13 @@ Label:hover {
 @media (max-width: 800px) {
     .all-container{
         max-width: 100%;
-        height: 800px;
+        height: 100vh;
         margin: 0 auto;
         background-color:#25282a;
         display: flex;
-        
+        overflow-x: hidden; 
+        overflow-y: hidden; 
     }
-
-    .all  {
-        max-width: 100%;
-        margin: 0 auto;
-        /* align-items: center; */
-        display: flex;
-        justify-content: center;
-        overflow-x: hidden;
-        height: 700px;
-         
-  }
 
   #slider{
     margin: 0 auto;
@@ -297,16 +270,96 @@ Label:hover {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-   
 }
 
 #active{
     margin: 0 auto;
     text-align: right;
-    width: 160px;
+    width: 180px;
     display: flex;
     justify-content: space-between;
+}
+
+#controls{
+    margin: 0 auto ;
+    width: 120px;
+    height: 20px;
+}
+
+.round {
+    width: 20px;
+    height: 20px;
+    background: #84b6fe;
+    border-radius: 50%;
+
+}
+.round:hover {
+    background: #fff;
+    transition: 0.2s;
+}
+
+
+#active label {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #84b6fe;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#active label:hover {
+    background-color: transparent;
+    transition: 0.2s;
+    height: 35px;
+    width: 35px;
+}
+
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4),
+#switch5:checked ~ #active label:nth-child(5) {
+    background:#fff ;
+    height: 35px;
+    width: 35px;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#switch1:checked ~ #active label:nth-child(1):hover{
+    background-color: #fff;
+    border: 0px;
+    transition: 0.2s;
+}
+
+#switch2:checked ~ #active label:nth-child(2):hover{
+    background-color: #fff;
+    border: 0px;
+    transition: 0.2s;
+}
+
+#switch3:checked ~ #active label:nth-child(3):hover{
+    background-color: #fff;
+    border: 0px;
+    transition: 0.2s;
+}
+
+#switch4:checked ~ #active label:nth-child(4):hover{
+    background-color: #fff;
+    border: 0px;
+    transition: 0.2s;
+}
+#switch5:checked ~ #active label:nth-child(5):hover{
+    background-color: #fff;
+    border: 0px;
+    transition: 0.2s;
 }
 
 #overflow {
@@ -331,30 +384,30 @@ Label:hover {
     width: 120px;
     height: 25px;
 }
-
 }
 
 @media (max-width: 500px) {
 
     .all-container{
         max-width: 100%;
-        height: 800px;
+        height: 100vh;
         margin: 0 auto;
         background-color:#25282a;
         display: flex;
+        overflow-x: hidden; 
+        overflow-y: hidden; 
         
     }
 
-    .all  {
+    /* .all  {
         max-width: 100%;
         margin: 0 auto;
-        /* align-items: center; */
         display: flex;
         justify-content: center;
         overflow-x: hidden;
         height: 700px;
          
-  }
+  } */
 
   #slider{
     margin: 0 auto;
@@ -369,10 +422,87 @@ Label:hover {
 #active{
     margin: 0 auto;
     text-align: right;
-    width: 140px;
+    width: 180px;
     display: flex;
     justify-content: space-between;
 }
+
+.round {
+    width: 20px;
+    height: 20px;
+    background: #84b6fe;
+    border-radius: 50%;
+
+}
+.round:hover {
+    background: #fff;
+    transition: 0.2s;
+}
+
+
+#active label {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #84b6fe;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#active label:hover {
+    background-color: transparent;
+    transition: 0.2s;
+    height: 35px;
+    width: 35px;
+}
+
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4),
+#switch5:checked ~ #active label:nth-child(5) {
+    /* background:#fff ; */
+    height: 35px;
+    width: 35px;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#switch1:checked ~ #active label:nth-child(1):hover{
+    /* background-color: #fff; */
+    border: 0px;
+    transition: 0.2s;
+}
+
+#switch2:checked ~ #active label:nth-child(2):hover{
+    background-color: #fff;
+    border: 0px;
+    transition: 0.2s;
+}
+
+#switch3:checked ~ #active label:nth-child(3):hover{
+    background-color: #fff;
+    border: 0px;
+    transition: 0.2s;
+}
+
+#switch4:checked ~ #active label:nth-child(4):hover{
+    background-color: #fff;
+    border: 0px;
+    transition: 0.2s;
+}
+#switch5:checked ~ #active label:nth-child(5):hover{
+    background-color: #fff;
+    border: 0px;
+    transition: 0.2s;
+}
+
 
 #overflow {
     margin: 0 auto;
